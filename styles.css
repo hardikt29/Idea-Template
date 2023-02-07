@@ -1,0 +1,162 @@
+.nav-item {
+  margin-left: 5em;
+  font-weight: 600;
+}
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.more {
+  text-decoration: none;
+}
+#home {
+  background: linear-gradient(
+    118deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(201, 236, 247, 1) 0%,
+    rgba(240, 238, 255, 1) 46%,
+    rgba(201, 197, 255, 1) 50%,
+    rgba(155, 191, 255, 1) 54%,
+    rgba(27, 255, 237, 1) 59%,
+    rgba(255, 255, 255, 1) 61%,
+    rgba(201, 236, 247, 1) 100%,
+    rgba(55, 40, 255, 1) 100%
+  );
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 4.75em);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#home #title {
+  margin-top: auto;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  animation: zoom-in-zoom-out 2s ease-out;
+}
+#home #tagline {
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bold;
+  animation: zoom-in-zoom-out 2s ease-out;
+}
+.more {
+  margin-bottom: auto;
+  font-weight: 650;
+  text-align: center;
+  animation: zoom-in-zoom-out 1s ease-out;
+}
+.heading {
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-left: 10vw;
+  position: relative;
+  animation-name: left-to-right;
+  animation-duration: 4s;
+}
+.text {
+  font-size: medium;
+  padding-left: 10vw;
+  font-weight: 500;
+  position: relative;
+  animation-name: right-to-left;
+  animation-duration: 6s;
+  padding-right: 10vw;
+}
+#banner {
+  align-self: center;
+  width: 75%;
+}
+#abt_us {
+  margin: 5vw;
+  display: flex;
+  flex-flow: column;
+}
+#abt_us_1 {
+  margin: 5vw;
+  display: flex;
+  flex-flow: column;
+}
+#aims {
+  margin: 5vw;
+  display: flex;
+  flex-flow: column;
+}
+#conc_by {
+  margin: 5vw;
+  display: flex;
+  flex-flow: column;
+}
+#message {
+  margin: 5vw;
+  display: flex;
+  flex-flow: column;
+}
+#footer {
+  width: 100%;
+  background-color: rgb(26, 25, 25);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#footer #up {
+  padding-top: 2.5vw;
+}
+#footer #up a {
+  color: grey;
+  margin-left: 2vw;
+  font-size: x-large;
+}
+#footer #up a:hover {
+  color: white;
+}
+#footer #down {
+  color: white;
+  font-size: larger;
+  padding-top: 2.5vw;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 600px) {
+  #footer #down {
+    font-size: small;
+  }
+}
+/*Zoom out animation
+*/
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/* left scrool animation*/
+@keyframes left-to-right {
+  0% {
+    right: 100vw;
+  }
+  100% {
+    right: 0vw;
+  }
+}
+/*right scroll animation*/
+@keyframes right-to-left {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: 0vw;
+  }
+}
+.navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the bottom of the page */
+  width: 100%; /* Full width */
+}
+
+/* Main content */
+.main {
+  margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+}
